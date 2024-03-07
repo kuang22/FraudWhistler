@@ -1,0 +1,122 @@
+{
+  "p228": [
+    "dataset/ori/p276/p276_152.wav",
+    "dataset/ori/p239/p239_412.wav",
+    "dataset/ori/p274/p274_426.wav",
+    "dataset/ori/p229/p229_272.wav",
+    "dataset/ori/p258/p258_008.wav",
+    "dataset/ori/p227/p227_264.wav",
+    "dataset/ori/p278/p278_017.wav",
+    "dataset/ori/p323/p323_090.wav",
+    "dataset/ori/p315/p315_077.wav",
+    "dataset/ori/p263/p263_283.wav"
+  ],
+  "p237": [
+    "dataset/ori/p271/p271_210.wav",
+    "dataset/ori/p246/p246_043.wav",
+    "dataset/ori/p260/p260_295.wav",
+    "dataset/ori/p333/p333_402.wav",
+    "dataset/ori/p339/p339_295.wav",
+    "dataset/ori/p310/p310_324.wav",
+    "dataset/ori/p339/p339_346.wav",
+    "dataset/ori/p239/p239_229.wav",
+    "dataset/ori/p334/p334_371.wav",
+    "dataset/ori/p364/p364_288.wav"
+  ],
+  "p255": [
+    "dataset/ori/p275/p275_410.wav",
+    "dataset/ori/p303/p303_001.wav",
+    "dataset/ori/p266/p266_034.wav",
+    "dataset/ori/p286/p286_453.wav",
+    "dataset/ori/p234/p234_156.wav",
+    "dataset/ori/p238/p238_282.wav",
+    "dataset/ori/p310/p310_147.wav",
+    "dataset/ori/p249/p249_230.wav",
+    "dataset/ori/p261/p261_236.wav",
+    "dataset/ori/p260/p260_030.wav"
+  ],
+  "p264": [
+    "dataset/ori/p306/p306_250.wav",
+    "dataset/ori/p341/p341_291.wav",
+    "dataset/ori/p293/p293_240.wav",
+    "dataset/ori/p280/p280_035.wav",
+    "dataset/ori/p301/p301_187.wav",
+    "dataset/ori/p340/p340_076.wav",
+    "dataset/ori/p243/p243_311.wav",
+    "dataset/ori/p230/p230_400.wav",
+    "dataset/ori/p376/p376_119.wav",
+    "dataset/ori/p318/p318_251.wav"
+  ],
+  "p268": [
+    "dataset/ori/p374/p374_174.wav",
+    "dataset/ori/p364/p364_268.wav",
+    "dataset/ori/p274/p274_056.wav",
+    "dataset/ori/p287/p287_039.wav",
+    "dataset/ori/p302/p302_209.wav",
+    "dataset/ori/p253/p253_043.wav",
+    "dataset/ori/p276/p276_063.wav",
+    "dataset/ori/p275/p275_344.wav",
+    "dataset/ori/p250/p250_147.wav",
+    "dataset/ori/p278/p278_206.wav"
+  ],
+  "p270": [
+    "dataset/ori/p257/p257_325.wav",
+    "dataset/ori/p295/p295_237.wav",
+    "dataset/ori/p267/p267_164.wav",
+    "dataset/ori/p246/p246_272.wav",
+    "dataset/ori/p305/p305_364.wav",
+    "dataset/ori/p243/p243_016.wav",
+    "dataset/ori/p252/p252_354.wav",
+    "dataset/ori/p232/p232_314.wav",
+    "dataset/ori/p259/p259_184.wav",
+    "dataset/ori/p246/p246_210.wav"
+  ],
+  "p298": [
+    "dataset/ori/p262/p262_147.wav",
+    "dataset/ori/p362/p362_417.wav",
+    "dataset/ori/p262/p262_371.wav",
+    "dataset/ori/p275/p275_049.wav",
+    "dataset/ori/p295/p295_110.wav",
+    "dataset/ori/p225/p225_253.wav",
+    "dataset/ori/p326/p326_246.wav",
+    "dataset/ori/p248/p248_357.wav",
+    "dataset/ori/p249/p249_059.wav",
+    "dataset/ori/p240/p240_288.wav"
+  ],
+  "p345": [
+    "dataset/ori/p297/p297_061.wav",
+    "dataset/ori/p305/p305_135.wav",
+    "dataset/ori/p376/p376_050.wav",
+    "dataset/ori/p283/p283_464.wav",
+    "dataset/ori/p285/p285_353.wav",
+    "dataset/ori/p265/p265_036.wav",
+    "dataset/ori/p227/p227_219.wav",
+    "dataset/ori/p305/p305_066.wav",
+    "dataset/ori/p286/p286_430.wav",
+    "dataset/ori/p340/p340_066.wav"
+  ],
+  "p360": [
+    "dataset/ori/p292/p292_188.wav",
+    "dataset/ori/p334/p334_066.wav",
+    "dataset/ori/p299/p299_025.wav",
+    "dataset/ori/p307/p307_352.wav",
+    "dataset/ori/p263/p263_392.wav",
+    "dataset/ori/p280/p280_206.wav",
+    "dataset/ori/p341/p341_329.wav",
+    "dataset/ori/p239/p239_199.wav",
+    "dataset/ori/p233/p233_239.wav",
+    "dataset/ori/p251/p251_124.wav"
+  ],
+  "p363": [
+    "dataset/ori/p248/p248_306.wav",
+    "dataset/ori/p250/p250_293.wav",
+    "dataset/ori/p272/p272_111.wav",
+    "dataset/ori/p299/p299_250.wav",
+    "dataset/ori/p307/p307_020.wav",
+    "dataset/ori/p256/p256_159.wav",
+    "dataset/ori/p256/p256_261.wav",
+    "dataset/ori/p311/p311_191.wav",
+    "dataset/ori/p243/p243_018.wav",
+    "dataset/ori/p341/p341_284.wav"
+  ]
+}

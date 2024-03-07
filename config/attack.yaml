@@ -1,0 +1,52 @@
+threshold: 0.3900672197341919
+
+fgsm_epsilon: 0.001
+
+pgd_epsilon: 0.001
+pgd_num_iters: 100
+pgd_step_size: 0.00001
+
+cw_num_iters: 1000
+cw_lr: 0.001
+cw_const: 0.01
+cw_norm_power: 2
+
+fm_num_iters: 1000
+fm_lr: 0.001
+fm_const: 0.01
+
+univ_epsilon: 0.01
+univ_num_iters: 100
+univ_step_size: 0.0001
+univ_confidence: 0.4
+univ_length: 16000
+univ_num_samples: 15
+
+ota_epsilon: 0.001
+ota_num_iters: 100
+ota_step_size: 0.00001
+reverb: "reverb.csv"
+
+eot_num_iters: 10
+# For AdapAttacker
+adap_epsilon: 0.1
+adap_num_iters: 100
+adap_step_size: 0.001
+adap_direct: 
+  - "Resample"
+  - "SpeedChanger"
+  - "Clip"
+  - "Filtering"
+  - "Smoothing"
+  - "PitchShift"
+  - "TimeShift"
+adap_bpda: 
+  - "Quant"
+  - "MelReconstruct"
+  - "Codec"
+  - "LPCReconstruct"
+adap_eot: 
+  - "Noisifier"
+  - "Reverber"
+  - "DropChunk"
+  - "DropFreq"

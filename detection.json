@@ -1,0 +1,27 @@
+{
+  "aes": [
+    "fgsm",
+    "pgd",
+    "cw",
+    "fm",
+    "univ"
+  ],
+  "dets": [
+    "fw",
+    "wave",
+    "td"
+  ],
+  "det_name_map": {
+    "fw": "FraudWhistler",
+    "wave": "WaveGuard",
+    "td": "TimeDepend"
+  },
+  "ae_name_map": {
+    "fgsm": "basic.FGSM",
+    "pgd": "basic.PGD",
+    "cw": "basic.CW",
+    "fm": "imperceptible.FM",
+    "univ": "universal.UNIV"
+  },
+  "res_dir": "Results/Eval/ASV"
+}

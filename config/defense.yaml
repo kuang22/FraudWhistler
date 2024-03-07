@@ -1,0 +1,63 @@
+threshold: 0.3900672197341919 
+samplerate: 16000
+option: 3
+# For add noise
+snr: 10
+# For reverbration
+reverb: "reverb.csv"
+scale_factor: 2.5
+# For speedperturb
+speedrange:
+  - 90
+  - 110
+# For Codec
+param:
+  format: flac
+  bits_per_sample: 8
+  channels_first: False
+# For Quantization
+qtbits: 8
+# For Resample
+resample_rate: 6000
+# For clip
+clip_low: 0.1
+clip_high: 0.1
+# For DropChunk
+chunk_drop_count_low: 50
+chunk_drop_count_high: 150
+noise_factor: 0.2
+# For DropFreq
+freq_drop_count_low: 10
+freq_drop_count_high: 15
+# For Filtering
+lowpass_factor: 1.5
+highpass_factor: 0.1
+# For MelReconstruct
+n_mels: 40
+# For Smoothing
+kernel_size: 7
+# For LPC Reconstruct
+order: 20
+# For Pitch Shift
+steps: 1
+# For Time Shift
+ratio: 0.5
+# For time dependency
+prob: 0.5
+destructors:
+  - 'DropChunk'
+  - 'DropFreq'
+  - 'SpeedChanger'
+  - 'Quant'
+  - 'Resample'
+  - 'Filtering'
+  - 'MelReconstruct'
+  - 'LPCReconstruct'
+  - 'Codec'
+  - 'Noisifier'
+  - 'Reverber'
+  - 'Clip'
+  - 'Smoothing'
+  - 'PitchShift'
+  - 'TimeShift'
+TempDelete:

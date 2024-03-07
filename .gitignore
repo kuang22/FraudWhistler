@@ -1,0 +1,6 @@
+*.DS_Store*
+__pycache__
+Makefile
+sync_exclude
+dataset
+reverb.csv
