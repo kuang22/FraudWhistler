@@ -23,5 +23,5 @@
     "fm": "imperceptible.FM",
     "univ": "universal.UNIV"
   },
-  "res_dir": "Results/Eval/ASV"
+  "res_dir": "Results"
 }

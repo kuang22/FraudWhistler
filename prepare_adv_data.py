@@ -21,6 +21,9 @@ with open("detection.json") as f:
   ae_name_map = detection_config['ae_name_map']
   res_dir = detection_config['res_dir']
 
+success = {}
+scores = {}
+succ_scores = {}
 
 def gen_adv_data(alg, is_univ, success, scores, succ_scores):
   if torch.cuda.is_available():
@@ -101,35 +104,21 @@ def gen_adv_data(alg, is_univ, success, scores, succ_scores):
 
 
 if __name__ == "__main__":
-  mp.set_start_method('spawn', force=True)
-  mgr = mp.Manager()
-  success = mgr.dict()
-  scores = mgr.dict()
-  succ_scores = mgr.dict()
-
   for det in dets:
-    scores[det] = mgr.dict()
-    succ_scores[det] = mgr.dict()
+    scores[det] = {}
+    succ_scores[det] = {}
   for alg in aes:
-    success[alg] = mgr.list()
+    success[alg] = []
     for det in dets:
-      scores[det][alg] = mgr.list()
-      succ_scores[det][alg] = mgr.list()
+      scores[det][alg] = []
+      succ_scores[det][alg] = []
 
   # Multiple Process
   if 'univ' in aes:
-    p = mp.Process(target=gen_adv_data, args=(
-        alg, True, success, scores, succ_scores,))
-    p.start()
-    p.join()
-  processes = []
+    gen_adv_data(alg, True, success, scores, succ_scores)
+
   for alg in set(aes)-{'univ'}:
-    p = mp.Process(target=gen_adv_data, args=(
-        alg, False, success, scores, succ_scores,))
-    p.start()
-    processes.append(p)
-  for p in processes:
-    p.join()
+    gen_adv_data(alg, False, success, scores, succ_scores)
 
   for alg in aes:
     success[alg] = np.array(success[alg])
@@ -139,6 +128,8 @@ if __name__ == "__main__":
     succrate = np.count_nonzero(success[alg]) / success[alg].size * 100
     print(f"{alg.upper()}: {succrate:.5f}%")
 
+  if not os.path.exists(res_dir):
+      os.makedirs(res_dir)
   with open(f"{res_dir}/scores_adv_data.npy", "wb") as f:
     for det in dets:
       for alg in aes:
