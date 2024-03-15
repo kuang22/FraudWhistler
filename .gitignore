@@ -1,4 +1,7 @@
 *.DS_Store*
+.jukit
+pretrained_models
+Results
 __pycache__
 Makefile
 sync_exclude
