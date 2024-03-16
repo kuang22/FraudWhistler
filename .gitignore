@@ -6,4 +6,3 @@ __pycache__
 Makefile
 sync_exclude
 dataset
-reverb.csv
