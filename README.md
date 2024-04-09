@@ -13,6 +13,7 @@ You can run the following commands to create a new environments for running the 
 ```
 conda env create -f env.yaml
 conda active fraudwhistler
+pip install -r requirements.txt
 ```
 
 ## Project Overview
