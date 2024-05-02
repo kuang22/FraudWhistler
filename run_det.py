@@ -30,7 +30,7 @@ if __name__ == "__main__":
       for alg in aes:
         X_adv[det][alg] = np.load(f)
         X_succ_adv[det][alg] = np.load(f)
-  print("Accuracy(ori) on benign examples:",
+  print("Accuracy(ori) on benign examples (ACC_be with no defense):",
         f"{np.count_nonzero(test_asr_succ) / test_asr_succ.size * 100:.2f}%")
 
   for det in dets:
@@ -54,27 +54,27 @@ if __name__ == "__main__":
                     y_succ_pred_{alg}[y_succ_pred_{alg} == 1].size")
     print("--------------")
     print(f"{det_name_map[det]}:")
-    print("Train Error:",
-          f"{n_error_train / y_pred_train.size * 100: .2f}%")
-    print("Accuracy on benign examples:",
+    # print("Train Error:",
+    #       f"{n_error_train / y_pred_train.size * 100: .2f}%")
+    print("Accuracy on benign examples (ACC_be):",
           f"{n_test_asr_succ / y_pred_test.size * 100:.2f}%")
 
-    print("Detector's accuracy on adversarial examples:")
+    print("Detector's accuracy on adversarial examples (ACC_ae):")
     total_acc = 0
     num_acc = 0
     for alg in aes:
       exec(f"acc = (1 - n_error_{alg} / y_pred_{alg}.size) * 100")
       total_acc += acc
       num_acc += 1
-      print(f"{alg.upper()}: {acc:.2f}%")
+      # print(f"{alg.upper()}: {acc:.2f}%")
     print(f"Average: {total_acc / num_acc:.2f}%")
 
-    print("Robust accuracy of whole system on AEs:")
+    print("Robust accuracy of whole system on AEs (ACC_rob):")
     total_acc = 0
     num_acc = 0
     for alg in aes:
       exec(f"acc = (1 - n_succ_error_{alg} / y_pred_{alg}.size) * 100")
       total_acc += acc
       num_acc += 1
-      print(f"{alg.upper()}: {acc:.2f}%")
+      # print(f"{alg.upper()}: {acc:.2f}%")
     print(f"Average: {total_acc / num_acc:.2f}%")
